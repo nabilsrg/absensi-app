@@ -1,0 +1,133 @@
+.checkin-layout {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.checkin-card {
+  background: #f8f9fd;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px rgba(222, 230, 244, 0.8);
+  display: grid;
+  gap: 12px;
+}
+
+.checkin-header h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.checkin-header p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7a92;
+}
+
+.checkin-field {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  color: #5f6f89;
+}
+
+.checkin-field input,
+.checkin-field textarea {
+  border: 1px solid #dbe3f1;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.checkin-preview {
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+  border: 1px dashed #d0d8e9;
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.checkin-preview img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.checkin-preview .file-name {
+  font-size: 12px;
+  color: #5f6f89;
+}
+
+.checkin-preview .placeholder {
+  font-size: 12px;
+  color: #96a0b2;
+}
+
+.checkin-error {
+  color: #b42318;
+  font-size: 12px;
+}
+
+.checkin-submit {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #2b6ff7, #1f56d0);
+  cursor: pointer;
+}
+
+.checkin-submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.result-card {
+  align-content: start;
+}
+
+.result-grid {
+  display: grid;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.result-grid .label {
+  display: block;
+  font-size: 12px;
+  color: #6b7a92;
+}
+
+.checkin-muted {
+  font-size: 12px;
+  color: #96a0b2;
+}
+
+.checkin-success {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  color: #2f7a4f;
+  background: #e7f6ed;
+  border: 1px solid #c8eed6;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.result-grid .checkin-submit {
+  justify-self: end;
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .checkin-layout {
+    grid-template-columns: 1fr;
+  }
+}

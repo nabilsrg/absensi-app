@@ -1,0 +1,266 @@
+.hrd-page {
+  display: grid;
+  gap: 16px;
+}
+
+.hrd-card {
+  background: #f8f9fd;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px rgba(222, 230, 244, 0.8);
+  display: grid;
+  gap: 12px;
+}
+
+.hrd-header h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.hrd-header p {
+  margin: 0;
+  color: #6b7a92;
+  font-size: 12px;
+}
+
+.hrd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hrd-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.hrd-tab {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #4c5f7b;
+  background: #eef2f9;
+  border: 1px solid #d7e1f2;
+}
+
+.hrd-tab.active {
+  background: #2b63d9;
+  color: #fff;
+  border-color: #2b63d9;
+}
+
+.hrd-form {
+  display: grid;
+  gap: 12px;
+}
+
+.hrd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.hrd-form label,
+.hrd-filters label {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+  color: #5f6f89;
+}
+
+.hrd-form input,
+.hrd-filters input,
+.hrd-form select,
+.hrd-filters select {
+  border: 1px solid #dbe3f1;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.hrd-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.hrd-primary,
+.hrd-secondary {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hrd-primary {
+  background: linear-gradient(135deg, #2b6ff7, #1f56d0);
+  color: #fff;
+}
+
+.hrd-danger {
+  background: #fef2f2;
+  color: #b42318;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hrd-success-action {
+  background: #ecfdf3;
+  color: #027a48;
+  border: 1px solid #a6f4c5;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hrd-danger:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.hrd-success-action:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.hrd-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.hrd-primary--compact {
+  width: auto;
+  padding: 8px 18px;
+}
+
+.hrd-actions-inline {
+  display: flex;
+  gap: 8px;
+}
+
+.hrd-action-link {
+  border: 1px solid #d7e1f2;
+  background: #eef2f9;
+  color: #4c5f7b;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.hrd-secondary {
+  background: #2b63d9;
+  color: #fff;
+}
+
+.hrd-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.hrd-table {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: inset 0 0 0 1px rgba(231, 236, 246, 0.9);
+  overflow: auto;
+  max-height: 180px;
+}
+
+.hrd-table-attendance {
+  max-height: 420px;
+}
+
+.hrd-meta {
+  font-size: 12px;
+  color: #7a8597;
+}
+
+.hrd-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  font-size: 13px;
+}
+
+.hrd-detail-grid .label {
+  display: block;
+  font-size: 12px;
+  color: #6b7a92;
+  margin-bottom: 4px;
+}
+
+.hrd-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.hrd-photo-item {
+  display: grid;
+  gap: 6px;
+  text-decoration: none;
+  color: #1b2433;
+  font-size: 12px;
+}
+
+.hrd-photo-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e0e6f3;
+}
+
+.hrd-pagination {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #6b778c;
+  align-items: center;
+}
+
+.hrd-pagination button {
+  border: 1px solid #e1e7f3;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.hrd-pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.hrd-error {
+  color: #b42318;
+  font-size: 12px;
+}
+
+.hrd-success {
+  color: #2f7a4f;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .hrd-grid {
+    grid-template-columns: 1fr;
+  }
+}

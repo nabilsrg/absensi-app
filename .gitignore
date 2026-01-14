@@ -1,0 +1,24 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+
+# Build output
+apps/backend/dist
+apps/backend/generated
+apps/frontend/dist
+apps/frontend/.vite
+
+# Runtime uploads
+apps/backend/uploads
+
+# Coverage
+apps/backend/coverage
+apps/frontend/coverage
+
+# TS build info
+apps/backend/*.tsbuildinfo
+
+# Logs
+*.log

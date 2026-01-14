@@ -1,0 +1,102 @@
+.history-page {
+  display: grid;
+  gap: 16px;
+}
+
+.history-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2b63d9;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.history-card {
+  background: #f8f9fd;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px rgba(222, 230, 244, 0.8);
+  display: grid;
+  gap: 12px;
+  max-height: calc(100vh - 220px);
+}
+
+.history-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.history-filters label {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  color: #5f6f89;
+}
+
+.history-filters input,
+.history-filters select {
+  border: 1px solid #dbe3f1;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.history-filters button {
+  align-self: end;
+  height: 32px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2b63d9;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.history-filters button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.history-table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: inset 0 0 0 1px rgba(231, 236, 246, 0.9);
+  overflow: auto;
+  max-height: 320px;
+}
+
+.history-pagination {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: #6b778c;
+  align-items: center;
+}
+
+.history-pagination button {
+  border: 1px solid #e1e7f3;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.history-pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.history-error {
+  color: #b42318;
+  font-size: 12px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,293 @@
+.employee-main {
+  display: grid;
+  gap: 12px;
+  min-height: 0;
+  grid-auto-rows: max-content;
+  align-content: start;
+}
+
+.welcome h1 {
+  margin: 0 0 2px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.welcome p {
+  margin: 0;
+  line-height: 1.2;
+  color: #7a8597;
+  font-size: 12px;
+}
+
+.welcome {
+  margin-bottom: 2px;
+}
+
+.card {
+  background: #f8f9fd;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px rgba(222, 230, 244, 0.8);
+}
+
+.absensi-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  background: linear-gradient(135deg, #e6edf8 0%, #eff3fb 60%, #e3ebf8 100%);
+}
+
+.absensi-info h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.absensi-time {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 20px rgba(72, 90, 120, 0.1);
+}
+
+.calendar-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #dbe4f5;
+  display: grid;
+  place-items: center;
+  color: #5672a4;
+}
+
+.calendar-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.absensi-date {
+  font-weight: 600;
+}
+
+.absensi-clock {
+  font-size: 18px;
+  font-weight: 800;
+  color: #38548d;
+}
+
+.absen-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2c6cf4 0%, #1f52c4 100%);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 14px 28px rgba(40, 92, 190, 0.35);
+}
+
+.absensi-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.clock-face {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fefefe 0%, #d9e1f0 70%);
+  border: 8px solid #91a7c9;
+  position: relative;
+}
+
+.clock-face::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: #3c4f6d;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.clock-face::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background: #3c4f6d;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-10%);
+  border-radius: 4px;
+}
+
+.history-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.history-header a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #2b63d9;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.history-table th,
+.history-table td {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 13px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.history-table th {
+  background: #f3f5fb;
+  color: #5a6a83;
+}
+
+.proof-thumb {
+  width: 42px;
+  height: 30px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #e0e6f3;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-present {
+  background: #dff3e5;
+  color: #2f7a4f;
+}
+
+.status-late {
+  background: #fde9c6;
+  color: #b66a12;
+}
+
+.status-absent,
+.status-leave,
+.status-sick {
+  background: #f8d7da;
+  color: #8f3b3b;
+}
+
+.empty-row {
+  text-align: center;
+  color: #96a0b2;
+}
+
+.history-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #7a8597;
+}
+
+.pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination button {
+  border: 1px solid #e1e7f3;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #2b63d9;
+  border-color: #2b63d9;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.employee-side {
+  display: grid;
+  gap: 18px;
+  min-height: 0;
+  grid-auto-rows: max-content;
+  align-content: start;
+}
+
+.history-card {
+  overflow: hidden;
+}
+
+.tips-card h3 {
+  margin: 0 0 12px;
+}
+
+.tips-card ul {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: #55657f;
+  font-size: 13px;
+  display: grid;
+  gap: 8px;
+}
+
+.tips-illustration {
+  background: #f1f4fb;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.detail-link {
+  color: #2b63d9;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.error-text {
+  color: #b42318;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .absensi-card {
+    grid-template-columns: 1fr;
+  }
+}
