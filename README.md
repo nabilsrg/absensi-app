@@ -65,8 +65,6 @@ npm run start:attendance
 npm run start:hr
 ```
 
-Catatan: buka masing-masing service di terminal terpisah.
-
 ## Setup Frontend
 
 Masuk ke folder frontend:
@@ -99,8 +97,6 @@ npm run dev
 2. Frontend:
    - `npm run dev`
 
-Pastikan semua service backend berjalan sebelum login (auth ada di port 3001).
-
 ## Akun Seed (default)
 
 - HRD:
@@ -110,7 +106,7 @@ Pastikan semua service backend berjalan sebelum login (auth ada di port 3001).
   - username: `EMP001`
   - password: `Emp12345!`
 
-## Endpoint Backend (ringkas)
+## Endpoint Backend
 
 - Auth
   - `POST /auth/login`
@@ -126,8 +122,3 @@ Pastikan semua service backend berjalan sebelum login (auth ada di port 3001).
   - `DELETE /hr/employees/:id`
   - `GET /hr/attendances`
   - `GET /hr/attendances/:id`
-
-## Catatan
-
-- Jalankan server dari `apps/backend` agar `.env` backend terbaca sesuai `process.cwd()`.
-- Upload foto absensi disimpan ke `apps/backend/uploads/attendance`.
